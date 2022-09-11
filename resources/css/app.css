@@ -1,0 +1,133 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body,
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ededed;
+    border-radius: 50%;
+    padding: 1.5em;
+    margin: 1em;
+  }
+  
+  box-icon[name="user"] {
+    transform: scale(1.4);
+  }
+
+  .card {
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  }
+  
+  .card-header, .card-footer {
+    border-color: #ebeef4;
+    background-color: #fff;
+    color: #798eb3;
+    padding: 15px;
+  }
+  
+.card-title {
+  padding: 20px 0 15px 0;
+  font-size: 60px;
+  font-weight: 800;
+  color: #012970;
+  font-family: "Poppins", sans-serif;
+}
+  .card-title span {
+    color: #899bbd;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .card-body {
+    padding: 0 20px 20px 20px;
+    background-color: rgba(134, 39, 39, 0.6);
+  }
+  
+  .card-img-overlay {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  /* Filter dropdown */
+.dashboard .filter {
+  position: absolute;
+  right: 0px;
+  top: 15px;
+}
+.dashboard .filter .icon {
+  color: #aab7cf;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+.dashboard .filter .icon:hover, .dashboard .filter .icon:focus {
+  color: #4154f1;
+}
+.dashboard .filter .dropdown-header {
+  padding: 8px 15px;
+}
+.dashboard .filter .dropdown-header h6 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #aab7cf;
+  margin-bottom: 0;
+  padding: 0;
+}
+.dashboard .filter .dropdown-item {
+  padding: 8px 15px;
+}
+
+/* Info Cards */
+.dashboard .info-card {
+  padding-bottom: 10px;
+}
+.dashboard .info-card h6 {
+  font-size: 28px;
+  color: #012970;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.dashboard .card-icon {
+  font-size: 32px;
+  line-height: 0;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.dashboard .sales-card .card-icon {
+  color: #4154f1;
+  background: #f6f6fe;
+}
+.dashboard .revenue-card .card-icon {
+  color: #2eca6a;
+  background: #e0f8e9;
+}
+.dashboard .customers-card .card-icon {
+  color: #ff771d;
+  background: #ffecdf;
+}
+
+.tabela {
+  min-width: 1000px !important;
+  width: 100%;
+  background-color: green;
+}
